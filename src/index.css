@@ -257,3 +257,7 @@ progress {
   font-size: inherit;
   padding: 0.8rem;
 }
+
+.sm-margin {
+  margin-left: 0.4rem;
+}
