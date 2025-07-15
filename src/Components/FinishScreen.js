@@ -1,4 +1,4 @@
-function FinishScreen({ points, maxPoints, highscore, dispatch, questions }) {
+function FinishScreen({ points, maxPoints, highscore, dispatch }) {
   const percentage = (points / maxPoints) * 100;
 
   let emogis;
@@ -18,7 +18,7 @@ function FinishScreen({ points, maxPoints, highscore, dispatch, questions }) {
       <button
         className="btn btn-ui"
         onClick={() => {
-          dispatch({ type: "restart", payload: questions });
+          dispatch({ type: "restart" });
         }}
       >
         Restart
